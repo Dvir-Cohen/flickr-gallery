@@ -1,0 +1,80 @@
+.image-root {
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid white;
+  padding: 0;
+ 
+  > div {
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: pre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   img{
+     position: absolute;
+     left: 0;
+     top: 0;
+     z-index: 0;
+   } 
+  }
+
+  &:hover > div {
+    visibility: visible;
+    .image-icon{
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .image-icon {
+    font-size: 20px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px;
+    margin: 3px;
+
+    &:hover {
+      color: white;
+      border-color: white;
+    }
+  }
+
+  &.blur{
+    filter: blur(10px)
+  }
+  &.contrast{
+    filter: contrast(50%);
+  }
+  &.grayscale{
+    filter: grayscale(30%);
+  }
+  &.sepia{
+    filter: invert(100%);
+  }
+  &.opacity{
+    filter: opacity(60%);
+  }
+
+}
+

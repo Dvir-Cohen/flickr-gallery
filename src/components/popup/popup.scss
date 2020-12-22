@@ -1,0 +1,18 @@
+.mask{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top:0;
+    left: 0;
+    .extendImg{
+        width: 50vw;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
